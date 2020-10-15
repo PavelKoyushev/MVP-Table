@@ -11,4 +11,5 @@ struct Person {
     let firstName: String
     let lastName: String
     
+    let country: String
 }

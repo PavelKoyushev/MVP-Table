@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let mainVC = ModelBulder.createMainModule()
+        let mainVC = ModelBuilder.createMainModule()
         let navBar = UINavigationController(rootViewController: mainVC)
         window?.rootViewController = navBar
         

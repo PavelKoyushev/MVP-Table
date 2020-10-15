@@ -11,9 +11,9 @@ protocol Builder {
     static func createMainModule() -> UIViewController
 }
 
-class ModelBulder: Builder {
+class ModelBuilder: Builder {
     static func createMainModule() -> UIViewController {
-        let person = Person(firstName: "Pavel", lastName: "Koyushev")
+        let person = Person(firstName: "Pavel", lastName: "Koyushev", country: "Russia")
         let view = MainViewController()
         
         let presenter = MainPresenter(view: view, person: person)

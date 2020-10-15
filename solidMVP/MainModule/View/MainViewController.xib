@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="solidMVP" customModuleProvider="target">
             <connections>
+                <outlet property="countryLabel" destination="bto-QI-0n9" id="wxG-HM-HMh"/>
                 <outlet property="greetingLabel" destination="KXS-y4-b15" id="jCa-kw-Y8E"/>
                 <outlet property="view" destination="iN0-l3-epB" id="XaH-MV-nRR"/>
             </connections>
@@ -35,6 +36,13 @@
                         <action selector="didTapButtonAction:" destination="-1" eventType="touchUpInside" id="QOG-fF-ku8"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bto-QI-0n9">
+                    <rect key="frame" x="145" y="450" width="125" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
