@@ -15,10 +15,11 @@
 		EB779E8B253618CE00A66A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB779E89253618CE00A66A58 /* LaunchScreen.storyboard */; };
 		EB779E96253618CF00A66A58 /* solidMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB779E95253618CF00A66A58 /* solidMVPTests.swift */; };
 		EB779EA1253618CF00A66A58 /* solidMVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB779EA0253618CF00A66A58 /* solidMVPUITests.swift */; };
-		EB779EB22536192700A66A58 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB779EB12536192700A66A58 /* Person.swift */; };
+		EB779EB22536192700A66A58 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB779EB12536192700A66A58 /* Comment.swift */; };
 		EB779EB725361B3400A66A58 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB779EB625361B3400A66A58 /* MainPresenter.swift */; };
 		EB779ECF25362D7A00A66A58 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB779ECE25362D7A00A66A58 /* MainViewController.xib */; };
 		EB779ED4253630C200A66A58 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB779ED3253630C200A66A58 /* ModuleBuilder.swift */; };
+		EBED674D253E1713003EA9EB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED674C253E1713003EA9EB /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +54,11 @@
 		EB779E9C253618CF00A66A58 /* MVP-TableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVP-TableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB779EA0253618CF00A66A58 /* solidMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = solidMVPUITests.swift; sourceTree = "<group>"; };
 		EB779EA2253618CF00A66A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB779EB12536192700A66A58 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EB779EB12536192700A66A58 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		EB779EB625361B3400A66A58 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		EB779ECE25362D7A00A66A58 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		EB779ED3253630C200A66A58 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		EBED674C253E1713003EA9EB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				EB779E7E253618CA00A66A58 /* AppDelegate.swift */,
 				EB779E80253618CA00A66A58 /* SceneDelegate.swift */,
 				EB779ED3253630C200A66A58 /* ModuleBuilder.swift */,
+				EBED6751253E1732003EA9EB /* Network */,
 				EB779EBE25362C9B00A66A58 /* MainModule */,
 				EB779E84253618CA00A66A58 /* Main.storyboard */,
 				EB779E87253618CE00A66A58 /* Assets.xcassets */,
@@ -159,7 +162,7 @@
 		EB779EC625362CE200A66A58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EB779EB12536192700A66A58 /* Person.swift */,
+				EB779EB12536192700A66A58 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +173,14 @@
 				EB779EB625361B3400A66A58 /* MainPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EBED6751253E1732003EA9EB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EBED674C253E1713003EA9EB /* NetworkService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +317,10 @@
 				EB779EB725361B3400A66A58 /* MainPresenter.swift in Sources */,
 				EB779E83253618CA00A66A58 /* MainViewController.swift in Sources */,
 				EB779E7F253618CA00A66A58 /* AppDelegate.swift in Sources */,
-				EB779EB22536192700A66A58 /* Person.swift in Sources */,
+				EB779EB22536192700A66A58 /* Comment.swift in Sources */,
 				EB779E81253618CA00A66A58 /* SceneDelegate.swift in Sources */,
 				EB779ED4253630C200A66A58 /* ModuleBuilder.swift in Sources */,
+				EBED674D253E1713003EA9EB /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
