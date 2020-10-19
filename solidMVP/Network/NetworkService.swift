@@ -14,7 +14,7 @@ protocol NetworkServiceProtocol {
 
 class NetworkService: NetworkServiceProtocol {
     func getComments(completion: @escaping (Result<[Comment]?, Error>) -> Void) {
-        let urlString = "https://jsonplaceholder.typicode.com/posts"
+        let urlString = "https://jsonplaceholder.typicode.com/comments"
         guard let url = URL(string: urlString) else {return}
 
         URLSession.shared.dataTask(with: url) { data, _, error in

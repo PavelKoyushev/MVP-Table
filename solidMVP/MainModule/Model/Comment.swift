@@ -8,7 +8,7 @@
 import Foundation
 
 struct Comment: Decodable {
-    var postID: Int
+    var postId: Int
     var id: Int
     var name: String
     var email: String
