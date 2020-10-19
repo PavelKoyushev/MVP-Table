@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB779E7B253618CA00A66A58 /* solidMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solidMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB779E7B253618CA00A66A58 /* MVP-Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-Table.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB779E7E253618CA00A66A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB779E80253618CA00A66A58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EB779E82253618CA00A66A58 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -47,10 +47,10 @@
 		EB779E87253618CE00A66A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB779E8A253618CE00A66A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB779E8C253618CE00A66A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB779E91253618CF00A66A58 /* solidMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = solidMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB779E91253618CF00A66A58 /* MVP-TableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVP-TableTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB779E95253618CF00A66A58 /* solidMVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = solidMVPTests.swift; sourceTree = "<group>"; };
 		EB779E97253618CF00A66A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB779E9C253618CF00A66A58 /* solidMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = solidMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB779E9C253618CF00A66A58 /* MVP-TableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVP-TableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB779EA0253618CF00A66A58 /* solidMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = solidMVPUITests.swift; sourceTree = "<group>"; };
 		EB779EA2253618CF00A66A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB779EB12536192700A66A58 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		EB779E7C253618CA00A66A58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB779E7B253618CA00A66A58 /* solidMVP.app */,
-				EB779E91253618CF00A66A58 /* solidMVPTests.xctest */,
-				EB779E9C253618CF00A66A58 /* solidMVPUITests.xctest */,
+				EB779E7B253618CA00A66A58 /* MVP-Table.app */,
+				EB779E91253618CF00A66A58 /* MVP-TableTests.xctest */,
+				EB779E9C253618CF00A66A58 /* MVP-TableUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,8 +140,8 @@
 		EB779EBE25362C9B00A66A58 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				EB779EC225362CD800A66A58 /* View */,
 				EB779EC625362CE200A66A58 /* Model */,
+				EB779EC225362CD800A66A58 /* View */,
 				EB779ECA25362CE900A66A58 /* Presenter */,
 			);
 			path = MainModule;
@@ -175,9 +175,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB779E7A253618CA00A66A58 /* solidMVP */ = {
+		EB779E7A253618CA00A66A58 /* MVP-Table */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB779EA5253618CF00A66A58 /* Build configuration list for PBXNativeTarget "solidMVP" */;
+			buildConfigurationList = EB779EA5253618CF00A66A58 /* Build configuration list for PBXNativeTarget "MVP-Table" */;
 			buildPhases = (
 				EB779E77253618CA00A66A58 /* Sources */,
 				EB779E78253618CA00A66A58 /* Frameworks */,
@@ -187,14 +187,14 @@
 			);
 			dependencies = (
 			);
-			name = solidMVP;
+			name = "MVP-Table";
 			productName = solidMVP;
-			productReference = EB779E7B253618CA00A66A58 /* solidMVP.app */;
+			productReference = EB779E7B253618CA00A66A58 /* MVP-Table.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EB779E90253618CF00A66A58 /* solidMVPTests */ = {
+		EB779E90253618CF00A66A58 /* MVP-TableTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB779EA8253618CF00A66A58 /* Build configuration list for PBXNativeTarget "solidMVPTests" */;
+			buildConfigurationList = EB779EA8253618CF00A66A58 /* Build configuration list for PBXNativeTarget "MVP-TableTests" */;
 			buildPhases = (
 				EB779E8D253618CF00A66A58 /* Sources */,
 				EB779E8E253618CF00A66A58 /* Frameworks */,
@@ -205,14 +205,14 @@
 			dependencies = (
 				EB779E93253618CF00A66A58 /* PBXTargetDependency */,
 			);
-			name = solidMVPTests;
+			name = "MVP-TableTests";
 			productName = solidMVPTests;
-			productReference = EB779E91253618CF00A66A58 /* solidMVPTests.xctest */;
+			productReference = EB779E91253618CF00A66A58 /* MVP-TableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EB779E9B253618CF00A66A58 /* solidMVPUITests */ = {
+		EB779E9B253618CF00A66A58 /* MVP-TableUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB779EAB253618CF00A66A58 /* Build configuration list for PBXNativeTarget "solidMVPUITests" */;
+			buildConfigurationList = EB779EAB253618CF00A66A58 /* Build configuration list for PBXNativeTarget "MVP-TableUITests" */;
 			buildPhases = (
 				EB779E98253618CF00A66A58 /* Sources */,
 				EB779E99253618CF00A66A58 /* Frameworks */,
@@ -223,9 +223,9 @@
 			dependencies = (
 				EB779E9E253618CF00A66A58 /* PBXTargetDependency */,
 			);
-			name = solidMVPUITests;
+			name = "MVP-TableUITests";
 			productName = solidMVPUITests;
-			productReference = EB779E9C253618CF00A66A58 /* solidMVPUITests.xctest */;
+			productReference = EB779E9C253618CF00A66A58 /* MVP-TableUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB779E76253618CA00A66A58 /* Build configuration list for PBXProject "solidMVP" */;
+			buildConfigurationList = EB779E76253618CA00A66A58 /* Build configuration list for PBXProject "MVP-Table" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,9 +263,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB779E7A253618CA00A66A58 /* solidMVP */,
-				EB779E90253618CF00A66A58 /* solidMVPTests */,
-				EB779E9B253618CF00A66A58 /* solidMVPUITests */,
+				EB779E7A253618CA00A66A58 /* MVP-Table */,
+				EB779E90253618CF00A66A58 /* MVP-TableTests */,
+				EB779E9B253618CF00A66A58 /* MVP-TableUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,12 +333,12 @@
 /* Begin PBXTargetDependency section */
 		EB779E93253618CF00A66A58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB779E7A253618CA00A66A58 /* solidMVP */;
+			target = EB779E7A253618CA00A66A58 /* MVP-Table */;
 			targetProxy = EB779E92253618CF00A66A58 /* PBXContainerItemProxy */;
 		};
 		EB779E9E253618CF00A66A58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB779E7A253618CA00A66A58 /* solidMVP */;
+			target = EB779E7A253618CA00A66A58 /* MVP-Table */;
 			targetProxy = EB779E9D253618CF00A66A58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -491,7 +491,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkoyushev.solidMVP;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pkoyushev.MVP-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,7 +510,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkoyushev.solidMVP;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pkoyushev.MVP-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,7 +535,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/solidMVP.app/solidMVP";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVP-Table.app/MVP-Table";
 			};
 			name = Debug;
 		};
@@ -557,7 +557,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/solidMVP.app/solidMVP";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVP-Table.app/MVP-Table";
 			};
 			name = Release;
 		};
@@ -604,7 +604,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB779E76253618CA00A66A58 /* Build configuration list for PBXProject "solidMVP" */ = {
+		EB779E76253618CA00A66A58 /* Build configuration list for PBXProject "MVP-Table" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB779EA3253618CF00A66A58 /* Debug */,
@@ -613,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB779EA5253618CF00A66A58 /* Build configuration list for PBXNativeTarget "solidMVP" */ = {
+		EB779EA5253618CF00A66A58 /* Build configuration list for PBXNativeTarget "MVP-Table" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB779EA6253618CF00A66A58 /* Debug */,
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB779EA8253618CF00A66A58 /* Build configuration list for PBXNativeTarget "solidMVPTests" */ = {
+		EB779EA8253618CF00A66A58 /* Build configuration list for PBXNativeTarget "MVP-TableTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB779EA9253618CF00A66A58 /* Debug */,
@@ -631,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB779EAB253618CF00A66A58 /* Build configuration list for PBXNativeTarget "solidMVPUITests" */ = {
+		EB779EAB253618CF00A66A58 /* Build configuration list for PBXNativeTarget "MVP-TableUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB779EAC253618CF00A66A58 /* Debug */,
