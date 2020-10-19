@@ -9,13 +9,11 @@ import Foundation
 
 protocol MainViewProtocol: class {
     func setGreeting(greeting: String)
-    func setCountry(country: String)
 }
 
 protocol MainViewPresenterProtocol: class {
     init (view: MainViewProtocol, person: Person)
     func showGreeting()
-    func showCountry()
 }
 
 class MainPresenter: MainViewPresenterProtocol {
@@ -30,10 +28,5 @@ class MainPresenter: MainViewPresenterProtocol {
     func showGreeting() {
         let greeting = self.person.firstName + " " + self.person.lastName
         self.view.setGreeting(greeting: greeting)
-    }
-    
-    func showCountry() {
-        let country = self.person.country
-        self.view.setCountry(country: country)
     }
 }

@@ -9,27 +9,34 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    @IBOutlet weak var greetingLabel: UILabel!
-    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     var presenter: MainViewPresenterProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter.showCountry()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
-    @IBAction func didTapButtonAction(_ sender: Any) {
-        self.presenter.showGreeting()
-    }
 }
 
-extension MainViewController: MainViewProtocol {
-    func setGreeting(greeting: String) {
-        self.greetingLabel.text = greeting
+extension MainViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
     }
-    func setCountry(country: String){
-        self.countryLabel.text = country
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = "TXT"
+        
+        return cell
+    }
+    
+}
+
+extension MainViewController: MainViewProtocol {    
+    func setGreeting(greeting: String) {
+        
     }
 }
 
