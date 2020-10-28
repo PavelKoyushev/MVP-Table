@@ -17,7 +17,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
-    
 }
 
 extension MainViewController: UITableViewDataSource{
@@ -32,7 +31,14 @@ extension MainViewController: UITableViewDataSource{
         
         return cell
     }
-    
+}
+
+extension MainViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let comment = presenter.comments?[indexPath.row]
+        let detailViewController = ModelBuilder.createDetailModule(comment: comment)
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }
 
 extension MainViewController: MainViewProtocol {    

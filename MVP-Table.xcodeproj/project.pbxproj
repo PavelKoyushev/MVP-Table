@@ -19,6 +19,9 @@
 		EB779EB725361B3400A66A58 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB779EB625361B3400A66A58 /* MainPresenter.swift */; };
 		EB779ECF25362D7A00A66A58 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB779ECE25362D7A00A66A58 /* MainViewController.xib */; };
 		EB779ED4253630C200A66A58 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB779ED3253630C200A66A58 /* ModuleBuilder.swift */; };
+		EBB32B9E2549F8EC006AEE0C /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB32B9D2549F8EC006AEE0C /* DetailPresenter.swift */; };
+		EBB32BAF2549FD68006AEE0C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB32BAD2549FD68006AEE0C /* DetailViewController.swift */; };
+		EBB32BB02549FD68006AEE0C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB32BAE2549FD68006AEE0C /* DetailViewController.xib */; };
 		EBED674D253E1713003EA9EB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED674C253E1713003EA9EB /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		EB779EB625361B3400A66A58 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		EB779ECE25362D7A00A66A58 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		EB779ED3253630C200A66A58 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		EBB32B9D2549F8EC006AEE0C /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		EBB32BAD2549FD68006AEE0C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EBB32BAE2549FD68006AEE0C /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		EBED674C253E1713003EA9EB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,7 @@
 				EB779E7E253618CA00A66A58 /* AppDelegate.swift */,
 				EB779E80253618CA00A66A58 /* SceneDelegate.swift */,
 				EB779ED3253630C200A66A58 /* ModuleBuilder.swift */,
+				EBB32BA92549FD0F006AEE0C /* DetailModule */,
 				EBED6751253E1732003EA9EB /* Network */,
 				EB779EBE25362C9B00A66A58 /* MainModule */,
 				EB779E84253618CA00A66A58 /* Main.storyboard */,
@@ -173,6 +180,32 @@
 				EB779EB625361B3400A66A58 /* MainPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EBB32BA52549FD01006AEE0C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EBB32B9D2549F8EC006AEE0C /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EBB32BA92549FD0F006AEE0C /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				EBB32BA52549FD01006AEE0C /* Presenter */,
+				EBB32BB42549FD90006AEE0C /* View */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		EBB32BB42549FD90006AEE0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBB32BAD2549FD68006AEE0C /* DetailViewController.swift */,
+				EBB32BAE2549FD68006AEE0C /* DetailViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EBED6751253E1732003EA9EB /* Network */ = {
@@ -288,6 +321,7 @@
 			files = (
 				EB779E8B253618CE00A66A58 /* LaunchScreen.storyboard in Resources */,
 				EB779E88253618CE00A66A58 /* Assets.xcassets in Resources */,
+				EBB32BB02549FD68006AEE0C /* DetailViewController.xib in Resources */,
 				EB779E86253618CA00A66A58 /* Main.storyboard in Resources */,
 				EB779ECF25362D7A00A66A58 /* MainViewController.xib in Resources */,
 			);
@@ -314,9 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB32BAF2549FD68006AEE0C /* DetailViewController.swift in Sources */,
 				EB779EB725361B3400A66A58 /* MainPresenter.swift in Sources */,
 				EB779E83253618CA00A66A58 /* MainViewController.swift in Sources */,
 				EB779E7F253618CA00A66A58 /* AppDelegate.swift in Sources */,
+				EBB32B9E2549F8EC006AEE0C /* DetailPresenter.swift in Sources */,
 				EB779EB22536192700A66A58 /* Comment.swift in Sources */,
 				EB779E81253618CA00A66A58 /* SceneDelegate.swift in Sources */,
 				EB779ED4253630C200A66A58 /* ModuleBuilder.swift in Sources */,
